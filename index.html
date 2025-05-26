@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfólio</div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-fade-in">Graziele Santos</h1>
+                <p class="animate-fade-in delay-1">Estudante do curso técnico em Desenvolvimento de Sistemas</p>
+                <a href="#projects" class="btn primary-btn animate-fade-in delay-2">Ver Projetos</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="minhafoto.jpeg" alt="Foto de perfil">
+                </div>
+                <div class="about-text">
+                    <p>Olá! Sou Graziele Santos, estudante de Desenvolvimento de Sistemas com foco em criar soluções tecnológicas inovadoras. Estou aprendendo as mais recentes tecnologias e metodologias para desenvolver aplicações web e mobile que resolvam problemas reais.</p>
+                    <p>Atualmente, estou aprimorando minhas habilidades em HTML, CSS, JavaScript e frameworks modernos como React. Também tenho interesse em desenvolvimento backend com Node.js e bancos de dados.</p>
+                    <p>Quando não estou codando, gosto de ler sobre novas tecnologias, jogar videogames e praticar esportes ao ar livre. Estou sempre aberto a novas oportunidades de aprendizado e colaboração!</p>
+                    <div class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Meus Projetos</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://artia.com/wp-content/uploads/2022/04/Gestao-de-tarefas-para-que-serve.png" alt="Projeto 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>App de Gerenciamento de Tarefas</h3>
+                        <p>Aplicação web desenvolvida com HTML, CSS e JavaScript que permite aos usuários criar, organizar e acompanhar suas tarefas diárias.</p>
+                        <a href="#" class="btn secondary-btn">Ver Projeto</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/12899188/pexels-photo-12899188.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Projeto 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Responsivo</h3>
+                        <p>Loja virtual responsiva, desenvolvida com React e Node.js, que oferece uma experiência de compra intuitiva em todos os dispositivos.</p>
+                        <a href="#" class="btn secondary-btn">Ver Projeto</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Projeto 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Sistema de Gestão Escolar</h3>
+                        <p>Sistema completo para gerenciamento de notas, frequência e comunicação entre alunos, professores e responsáveis.</p>
+                        <a href="#" class="btn secondary-btn">Ver Projeto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class='bx bx-envelope'></i>
+                        <p>email@exemplo.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-phone'></i>
+                        <p>(11) 98765-4321</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-map'></i>
+                        <p>São Paulo, Brasil</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Graziele Santos. Todos os direitos reservados.</p>
+                <div class="social-links">
+                    <a href="https://github.com/grazibalafronte" target="_blank" aria-label="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/graziele-santos-0ab113323" target="_blank" aria-label="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://instagram.com/grazielesantos9713" target="_blank" aria-label="Instagram">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile navigation
+        const navSlide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-links li');
+
+            burger.addEventListener('click', () => {
+                // Toggle Nav
+                nav.classList.toggle('nav-active');
+                
+                // Animate Links
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = '';
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                    }
+                });
+                
+                // Burger Animation
+                burger.classList.toggle('toggle');
+            });
+        };
+
+        navSlide();
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu if open
+                const nav = document.querySelector('.nav-links');
+                const burger = document.querySelector('.burger');
+                if (nav.classList.contains('nav-active')) {
+                    nav.classList.remove('nav-active');
+                    burger.classList.remove('toggle');
+                    
+                    document.querySelectorAll('.nav-links li').forEach(link => {
+                        link.style.animation = '';
+                    });
+                }
+            });
+        });
+
+        // Active link on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
